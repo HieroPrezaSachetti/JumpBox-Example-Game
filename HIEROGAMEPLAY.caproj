@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>HIEROGAMEPLAY</name>
+    <description>Casual Game</description>
+    <version>1.0.0.0</version>
+    <author>Hiero</author>
+    <author-email>hiero_sachetti@hotmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.HPS.PLAY</app-id>
+    <unique-id>3bj9l61r1evpx</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="ScirraArcadeV4" version="1">Scirra Arcade</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>854</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>la_SPLASH</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="IMG_background" sid="160529266099253">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_02.png" />
+        </object-type>
+        <object-type name="img_logo" sid="157223387040837">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839940856080777" speed="5">
+                    <frame duration="1" hotspotX="0.501217" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\LOGO.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="887947138507654">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_05.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="264632565331674">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_03.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="121249836513559">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_15.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="708685984922247">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_13.png" />
+        </object-type>
+        <object-type name="TiledBackground6" sid="373453553353553">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_14.png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="414638639090671">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_11.png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="737424795922163">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_05.png" />
+        </object-type>
+        <object-type name="IMG_LOGOGAME" sid="987225449556406">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="630964123518087" speed="5">
+                    <frame duration="1" hotspotX="0.501475" hotspotY="0.502262" original-source="C:\Users\HIERO\Desktop\PNG\LOGO DO GAME.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="102450086964467">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_cheer2.png" />
+        </object-type>
+        <object-type name="TiledBackground9" sid="833394857882545">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_hang.png" />
+        </object-type>
+        <object-type name="TiledBackground10" sid="969660497302507">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\HIERO\Desktop\PNG\RTS pack\Retina\RTSobject_05.png" />
+        </object-type>
+        <object-type name="Sprite" sid="114677193331247">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855939216407568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\play.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_play" sid="422672756708873">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136014767342020" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502513" original-source="C:\Users\HIERO\Desktop\PNG\play.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="802420418912789">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="PERSONAGEM" sid="231519431757314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="650916298322625">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="PARADO" pingpong="0" repeatcount="1" repeatto="0" sid="170187734626999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_stand.png">
+                        <collision-poly>
+                            <point x="0.325" y="0.236364" />
+                            <point x="0.5" y="0.181818" />
+                            <point x="0.8125" y="0.136364" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.8375" y="0.881818" />
+                            <point x="0.2" y="0.854545" />
+                            <point x="0.225" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="ANDANDO" pingpong="0" repeatcount="1" repeatto="0" sid="190773008908538" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_walk2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CAINDO" pingpong="0" repeatcount="1" repeatto="0" sid="874528322607927" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_cheer2.png">
+                        <collision-poly>
+                            <point x="0.3375" y="0.245455" />
+                            <point x="0.5" y="0.181818" />
+                            <point x="0.75" y="0.181818" />
+                            <point x="0.95" y="0.5" />
+                            <point x="0.875" y="0.909091" />
+                            <point x="0.5" y="0.854545" />
+                            <point x="0.1375" y="0.9" />
+                            <point x="0.075" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="MORRENDO" pingpong="0" repeatcount="1" repeatto="0" sid="351771162001233" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\PNG\Player\Poses\player_fall.png">
+                        <collision-poly>
+                            <point x="0.3375" y="0.245455" />
+                            <point x="0.5" y="0.154545" />
+                            <point x="0.8625" y="0.1" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.8" y="0.854545" />
+                            <point x="0.5" y="0.818182" />
+                            <point x="0.25" y="0.818182" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataforma" sid="230118983256953">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="316015105563066">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="531423412595355" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CAIXA" sid="197538604346228">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="500054040541615">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129074273048206" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\assets\boxCrate_double.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\assets\hudJewel_yellow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PAREDE" sid="947340394227100">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567576911361509" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FontePontos" sid="221506684843734">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\HIERO\Desktop\assets\spritefont.fw.png" />
+        </object-type>
+        <object-type name="IMG_PAINEL" sid="825219435897776">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930047600782708" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\assets\blue_panel.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.02" />
+                            <point x="0.5" y="0" />
+                            <point x="0.98" y="0.02" />
+                            <point x="1" y="0.5" />
+                            <point x="0.98" y="0.98" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IMG_GAMEOVER" sid="601865218869883">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="925832915227354">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285621824468303" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\assets\gameover-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BOTAO_MENU" sid="490685814848567">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="456954624262069">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185404203717523" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\assets\menuList.png">
+                        <collision-poly>
+                            <point x="0.18" y="0.18" />
+                            <point x="0.5" y="0.16" />
+                            <point x="0.82" y="0.18" />
+                            <point x="0.82" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.18" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BOTAO_RESTART" sid="131837698207255">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="497144414924114">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442138718690104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HIERO\Desktop\assets\return.png">
+                        <collision-poly>
+                            <point x="0.36" y="0.36" />
+                            <point x="0.5" y="0.27" />
+                            <point x="0.7" y="0.3" />
+                            <point x="0.84" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.58" />
+                            <point x="0.29" y="0.71" />
+                            <point x="0.22" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScirraArcade" sid="356827639122566">
+            <plugin id="ScirraArcadeV4" />
+        </object-type>
+        <object-type name="JUMPBOX" sid="358158171606141">
+            <plugin id="Browser" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>la_SPLASH.xml</layout>
+        <layout>la_MENU.xml</layout>
+        <layout>la_GAME.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Eve_Splash.xml</event-sheet>
+        <event-sheet>eve_Menu.xml</event-sheet>
+        <event-sheet>Eve_game.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="13">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="ScirraArcade" uid="26" />
+        <global-instance type="JUMPBOX" uid="27" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

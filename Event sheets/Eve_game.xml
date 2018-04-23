@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eve_game</name>
+    <events>
+        <variable constant="0" name="Pontos" sid="756004313754574" static="0" type="number">0</variable>
+        <variable constant="0" name="Linha" sid="272698752850082" static="0" type="number">0</variable>
+        <event-block sid="801205152281109">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="306569491704118" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="274940193002913" type="PERSONAGEM">
+                    <param id="0" name="Animation">&quot;CAINDO&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="602730487899131" type="System">
+                    <param id="0" name="Variable">Linha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="624464472278517" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="790374326656699" type="IMG_GAMEOVER">
+                    <param id="0" name="Pin to">IMG_PAINEL</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="830882809335325" type="BOTAO_MENU">
+                    <param id="0" name="Pin to">IMG_PAINEL</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="949291698637826" type="BOTAO_RESTART">
+                    <param id="0" name="Pin to">IMG_PAINEL</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="152404488910738">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="305887453441607" type="PERSONAGEM">
+                    <param id="0" name="Object">plataforma</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="570187812977863" type="System">
+                    <param id="0" name="First value">PERSONAGEM.AnimationName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;MORRENDO&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="116753409057059" type="PERSONAGEM">
+                    <param id="0" name="Animation">&quot;ANDANDO&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="334631591641971">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="365485040499152" type="Touch" />
+                <condition id="-8" name="Compare two values" sid="980819048889922" type="System">
+                    <param id="0" name="First value">PERSONAGEM.AnimationName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;ANDANDO&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="895855915658127" type="System">
+                    <param id="0" name="Variable">Linha</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="449103431367457" type="PERSONAGEM">
+                    <param id="0" name="Y">Self.y+ 108</param>
+                </action>
+                <action id="4" name="Set animation" sid="760338838986412" type="PERSONAGEM">
+                    <param id="0" name="Animation">&quot;CAINDO&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="536784942334857">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="859519087927246" type="System">
+                            <param id="0" name="Variable">Linha</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="498039435231999" type="System">
+                            <param id="0" name="Variable">Linha</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="233314956266079" type="PERSONAGEM">
+                            <param id="0" name="Y">46</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="320322966710138">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="503466980657016" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="690538516587683" type="System">
+                    <param id="0" name="Object to create">CAIXA</param>
+                    <param id="1" name="Layer">&quot;game&quot;</param>
+                    <param id="2" name="X">750</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="5" name="Set frame" sid="303873127610687" type="CAIXA">
+                    <param id="0" name="Frame number">choose (0,1)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="506690463159068" type="CAIXA">
+                    <param id="0" name="Y">choose (210,490,748)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="285497864775315">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="337084221222170" type="CAIXA">
+                    <param id="0" name="Object">PAREDE</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="110877081788631" type="CAIXA" />
+            </actions>
+        </event-block>
+        <event-block sid="304540241290378">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="272647793059325" type="PERSONAGEM">
+                    <param id="0" name="Object">CAIXA</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="543669023981701" type="CAIXA">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="964602599102874" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="327971152481086" type="CAIXA" />
+            </actions>
+        </event-block>
+        <event-block sid="609699482649923">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="423598876673848" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="628511767870840" type="FontePontos">
+                    <param id="0" name="Text">Pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="867634025910562">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="617698493308174" type="PERSONAGEM">
+                    <param id="0" name="Object">CAIXA</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="299929412997289" type="CAIXA">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="274779964737540" type="PERSONAGEM">
+                    <param id="0" name="Animation">&quot;MORRENDO&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="305867320562527" type="CAIXA" />
+            </actions>
+        </event-block>
+        <event-block sid="766279121191978">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="919835518874103" type="System" />
+                <condition id="-8" name="Compare two values" sid="976101950005309" type="System">
+                    <param id="0" name="First value">PERSONAGEM.AnimationName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;MORRENDO&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="525403538659373" type="CAIXA">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="513481078007127" type="IMG_PAINEL">
+                    <param id="0" name="Y">lerp(Self.Y, 390,0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="758791456544493">
+            <conditions>
+                <condition id="3" name="On touched object" sid="972862124359156" type="Touch">
+                    <param id="0" name="Object">BOTAO_MENU</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="479852623837356" type="System">
+                    <param id="0" name="Layout">la_MENU</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="947283421482095">
+            <conditions>
+                <condition id="3" name="On touched object" sid="971298552566526" type="Touch">
+                    <param id="0" name="Object">BOTAO_RESTART</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="317348891348272" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

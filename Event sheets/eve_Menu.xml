@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eve_Menu</name>
+    <events>
+        <event-block sid="832848579750046">
+            <conditions>
+                <condition id="3" name="On touched object" sid="741664567184103" type="Touch">
+                    <param id="0" name="Object">btn_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="530006148219693" type="btn_play">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="900490412784756" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="698353608459540" type="System">
+                    <param id="0" name="Layout">la_GAME</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
